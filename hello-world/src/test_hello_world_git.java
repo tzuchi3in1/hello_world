@@ -3,10 +3,14 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.widgets.Combo;
 
 public class test_hello_world_git extends Shell {
 	private Composite composite;
 	private TabFolder tabFolder;
+	private SashForm sashForm;
+	private Combo combo;
 
 	/**
 	 * Launch the application.
@@ -50,6 +54,12 @@ public class test_hello_world_git extends Shell {
 		
 		tabFolder = new TabFolder(this, SWT.NONE);
 		tabFolder.setBounds(209, 39, 147, 52);
+		
+		sashForm = new SashForm(this, SWT.NONE);
+		sashForm.setBounds(41, 62, 0, 0);
+		
+		combo = new Combo(this, SWT.NONE);
+		combo.setBounds(41, 82, 26, 22);
 	}
 
 	@Override
